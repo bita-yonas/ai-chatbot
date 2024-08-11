@@ -24,7 +24,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStartChat }) => {
   return (
     <div style={styles.landingPage}>
       <div style={styles.content}>
-      <h1 className={`text-5xl font-semibold ${styles.title}`}>
+      <h1 className={`text-7xl font-semibold ${styles.title}`}>
   Welcome to Our Chat Service <span className="highlighted-text">P.L.A.T.O  AI</span>
 </h1>
         <p style={styles.subtitle}>Connect with us to get help or information instantly.</p>
