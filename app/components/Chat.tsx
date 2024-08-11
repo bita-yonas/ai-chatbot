@@ -258,7 +258,7 @@ const styles = {
     flexDirection: 'column' as 'column',
     justifyContent: 'center',
     alignItems: 'flex-start', // Align content to the left
-    height: '100vh',
+    minHeight: '100vh', // Minimum height to cover the viewport
     backgroundColor: '#000', // Background color black
     backgroundImage: 'url("/bak.jpg")', // Add your background image here
     backgroundSize: 'cover', // Make sure the image covers the entire area
@@ -273,24 +273,41 @@ const styles = {
     width: '100%',
   },
   title: {
-    fontSize: '60px', // Larger font size for the welcome text
+    fontSize: '4rem', // Responsive font size
     fontWeight: 'bold' as 'bold',
-    marginBottom: '10px',
+    marginBottom: '0.5rem',
   },
   subtitle: {
-    fontSize: '24px',
-    marginBottom: '20px',
+    fontSize: '1.5rem',
+    marginBottom: '1rem',
   },
   startChatButton: {
-    marginTop: '20px',
-    padding: '10px 20px',
-    fontSize: '18px',
+    marginTop: '1rem',
+    padding: '0.5rem 1rem',
+    fontSize: '1rem',
     backgroundColor: '#007bff',
     color: '#fff',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-  }
+  },
+  // Media query for devices with max width of 768px (tablets and mobile devices)
+  '@media (max-width: 768px)': {
+    landingPage: {
+      alignItems: 'center', // Center content on smaller screens
+      textAlign: 'center' as 'center',
+    },
+    title: {
+      fontSize: '3rem', // Smaller font size for mobile devices
+    },
+    subtitle: {
+      fontSize: '1.25rem',
+    },
+    startChatButton: {
+      padding: '0.5rem 1.5rem', // Larger padding for better touch target
+      fontSize: '1.1rem',
+    },
+  },
 };
 
 export default ChatApp;
