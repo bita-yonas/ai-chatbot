@@ -267,7 +267,6 @@ const styles = {
     textAlign: 'left' as 'left',
     padding: '20px',
     boxSizing: 'border-box' as 'border-box', // Ensure padding is included in width calculation
-    overflowY: 'auto', // Make the landing page scrollable
   },
   content: {
     maxWidth: '600px', // Adjust as needed
